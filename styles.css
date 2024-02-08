@@ -1,51 +1,98 @@
-:root 
+/* Adapte este CSS conforme necessário */
 
-
-{
-    --cor-de-fundo: #000000;
-    font-size: 20px;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  p:not(:last-child) {
-    margin-bottom: 1.5em;
-  }
-  
-  body {
-    font: 1em/1.618 Inter, sans-serif;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+    font-family: 'Arial', sans-serif;
     
-    min-height: 100vh;
-    padding: 30px;
-    margin: 0;
-    
-    color: #224;
     background:
-      url(https://source.unsplash.com/E8Ufcyxz514/2400x1823)
-      center / cover no-repeat fixed;
-  }
-  
-  .card {
-    max-width: 1000px;
-    min-height: 350px;
+    url(https://source.unsplash.com/E8Ufcyxz514/2400x1823)
+    center / cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button_wrapper {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid #dcdcdc;
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #ceeccf90;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button_wrapper:hover {
+    background-color: #45a049;
+}
+
+.form-groupem{
+    background-color: transparent;
+    text-align: left;
+    border:1px dotted rgb(255, 255, 255);
+    font-family: inter;
+    -webkit-text-fill-color: #363636;
+    
+}
+
+.form-groupsn{
+    background-color: transparent;
+    text-align: left;
+    border: 1px dotted  rgb(255, 255, 255);
+    font-family: inter;
+    -webkit-text-fill-color: #363636;
+    
+}
+
+.card {
+    flex-basis: calc(50% - 35px);
+    max-width: 300px;
+    margin: 20px 35px; /* Adiciona margens entre as caixas */
+    padding: 20px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   
-    max-width: 1000px;
-    height: 350px;
+    max-width: 500px;
+    height: 300px;
     padding: 35px;
   
     border: 1px solid rgba(255, 255, 255, 0.042);
@@ -119,14 +166,14 @@
 .button_wrapper {
     position: relative;
     display: inline-block;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: .1em;
     color: #787373;
     text-decoration: none;
     text-transform: uppercase;
     border: 3px solid #dcdcdc;
-    padding: 10px 37px;
+    padding: 10px 33px;
     margin: 10px;
     z-index: 1;
     overflow: hidden;
@@ -135,21 +182,7 @@
     
 }
 
-.form-groupem{
-    background-color: transparent;
-    text-align: left;
-    border:1px dotted rgb(255, 255, 255);
-    font-family: inter;
-    -webkit-text-fill-color: #363636;
-    
-}
+.tl1{
+    font-size: large;
 
-.form-groupsn{
-    background-color: transparent;
-    text-align: left;
-    border: 1px dotted  rgb(255, 255, 255);
-    font-family: inter;
-    -webkit-text-fill-color: #363636;
-    
 }
-
